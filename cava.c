@@ -871,7 +871,7 @@ as of 0.4.0 all options are specified in config file, see in '/home/username/.co
                     sleep = 0;
 
                 // process: if input was present for the last 30 seconds apply FFT to it
-                if (sleep < p.framerate * 30) {
+                if (sleep < p.framerate * 120) {
 
                     // process: execute FFT and sort frequency bands
                     if (p.stereo) {
