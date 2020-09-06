@@ -16,4 +16,4 @@ automake --add-missing
 #if [ -z "$XDG_CONFIG_HOME" ]; then CONFIGDIR=$HOME/.config/cava2; fi
 
 mkdir -p "/home/volumio/.config/cava2"
-[ -f "/home/volumio/.config/cava2/config ] || cp example_files/config "/home/volumio/.config/cava2/config
+[ -f "/home/volumio/.config/cava2/config" ] || cp example_files/config /home/volumio/.config/cava2/config
