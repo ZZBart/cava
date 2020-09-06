@@ -11,9 +11,9 @@ aclocal
 autoconf
 automake --add-missing
 
-#CONFIGDIR=$XDG_CONFIG_HOME/cava2
+CONFIGDIR=$XDG_CONFIG_HOME/cava2
 
-#if [ -z "$XDG_CONFIG_HOME" ]; then CONFIGDIR=$HOME/.config/cava2; fi
+if [ -z "$XDG_CONFIG_HOME" ]; then CONFIGDIR=$HOME/.config/cava2; fi
 
-mkdir -p "/home/volumio/.config/cava2"
-[ -f "/home/volumio/.config/cava2/config" ] || cp example_files/config /home/volumio/.config/cava2/config
+mkdir -p "$CONFIGDIR"
+[ -f "$CONFIGDIR"/config ] || cp example_files/config "$CONFIGDIR"/config
