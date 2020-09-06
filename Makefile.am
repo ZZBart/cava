@@ -8,7 +8,7 @@ ACLOCAL_AMFLAGS = -I m4
 
 M_CPPFLAGS = -DSYSTEM_LIBINIPARSER=@SYSTEM_LIBINIPARSER@
 
-bin_PROGRAMS = cava
+bin_PROGRAMS = cava2
 cava_SOURCES = cava.c config.c input/common.c input/fifo.c input/shmem.c \
                output/terminal_noncurses.c output/raw.c
 cava_LDFLAGS = -L/usr/local/lib -Wl,-rpath /usr/local/lib
